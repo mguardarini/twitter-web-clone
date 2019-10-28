@@ -34,7 +34,7 @@ export default function Footer() {
 
 const useStyles = makeStyles(theme => ({
     footer:{
-        marginLeft:'50px',
+        marginLeft:'60px',
         marginRight:'50px'
     }
 }));
