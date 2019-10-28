@@ -5,7 +5,8 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles(theme => ({
     link:{
         fontSize: '12px',
-        padding:'7px',
+        paddingLeft:'2px',
+        paddingRight:'13px',
         paddingTop:'10px',
         paddingBottom:'11px',
         color:'#aab8c2',
