@@ -9,7 +9,7 @@ export default function Footer() {
     const classes = useStyles();
 
     return (
-        <Grid className={classes.footer} fixed sm={12}>
+        <Grid item className={classes.footer} fixed="true" sm={12}>
             <Link name="Sobre"/>
             <Link name="Central de Ajuda"/>
             <Link name="Blog"/>
