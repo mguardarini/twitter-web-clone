@@ -1,49 +1,47 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Footer from '../../components/Footer/footer'
-import img_login from '../../Images/login.png'
-import img_boasvindas from '../../Images/twitter-frase.PNG'
-
-import Container from '@material-ui/core/Container';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
+import Input from '../../components/Input/input'
 import Button from '@material-ui/core/Button';
+import {withStyles, makeStyles} from '@material-ui/core/styles';
 
-export default function FullWidthGrid() {
+import imgLogin from '../../Images/login.png'
+import imgBoasVindas from '../../Images/twitter-frase.PNG'
+
+const CustomButton = withStyles(theme => ({
+  root: {
+    color: theme.palette.getContrastText('#1da1f2'),
+    backgroundColor:'#1da1f2',
+    '&:hover': {
+      backgroundColor: '#1da1f2',
+    },
+  },
+}))(Button);
+
+
+export default function LoginScreen() {
     const classes = useStyles();
-
+   
     return (
-      <div className={classes.root}>
+      <div className={classes.rootGrid}>
         <Grid container>
           <Grid item sm={6} xs={12}>
-             <img width='100%' src={img_login}></img>
+             <img width='100%' src={imgLogin}></img>
           </Grid>
           <Grid item sm={6} xs={12}>
-             <Grid className={classes.grid_text}>
-              <TextField
-                    id="outlined-dense"
-                    className={classes.textfield}
-                    label="Nome, "
-                    margin="dense"
-                    variant="outlined"
-                  />
-                    <TextField
-                    id="outlined-dense"
-                    className={classes.textfield}
-                    margin="dense"
-                    variant="outlined"
-                  />
-                  <Button variant="outlined" text="Entrar" color="primary" className={classes.fab}>
-                      Entrar
+             <Grid className={classes.inputGrid}>
+                  <Input label='Nome'/>
+                  <Input label='Senha'/>
+                  <Button variant="outlined" text="Entrar" color="primary" className={classes.entrarButtoon}>
+                    Entrar
                   </Button>
               </Grid>
-              <Grid className={classes.grid_image}>
-                  <img width='80%' src={img_boasvindas}></img>
-                  <Button variant="outlined" text="Entrar" color="primary" className={classes.fab2}>
+              <Grid className={classes.imageGrid}>
+                  <img width='65%' src={imgBoasVindas}></img>
+                  <CustomButton variant="outlined" text="Entrar" color="primary" className={classes.inscrevaButton}>
                       Inscreva-se
-                  </Button>
-                  <Button variant="outlined" text="Entrar" color="primary" className={classes.fab2}>
+                  </CustomButton>
+                  <Button variant="outlined" text="Entrar" color="primary" className={classes.entrarButton2}>
                       Entrar
                   </Button>
               </Grid>
@@ -56,51 +54,50 @@ export default function FullWidthGrid() {
 
   
 const useStyles = makeStyles(theme => ({
-  root: {
+  rootGrid: {
     flexGrow: 1,
     color: '#e6ecf0',
   },
-  grid_image: {
+  imageGrid: {
     alignContent: 'center',
-    marginLeft:'24%',
-    marginTop:'80px',
+    marginLeft:'26%',
+    marginTop:'18px',
     marginBottom:'80px',
     marginRight:'24%',
     align: 'center',
+    width:'70%',
+    height:'70%'
   },
-  grid_text: {
-    alignContent: 'center',
+  inputGrid: {
     marginLeft:'15%',
-    marginTop:'3%'
+    marginTop:'3%',
+    marginBottom:'1%'
   },
-  fab: {
-    margin: theme.spacing(1),
+  entrarButtoon: {
     marginTop:'20px',
-    width:'70px',
+    width:'58px',
     height:'50px',
     fontFamily:'Segoe UI',
     borderRadius:'60px',
     textTransform: 'none',
   },
-  fab2: {
-    margin: theme.spacing(1),
+  inscrevaButton: {
     marginTop:'20px',
-    width:'100%',
-    height:'30px',
+    width:'65%',
+    color:'white',
+    height:'40px',
     fontFamily:'Segoe UI',
     borderRadius:'60px',
     textTransform: 'none',
-    paddingBottom: '20px',
   },
-  textfield: {
-    margin: theme.spacing(1),
-    marginTop:'20px',
-    width:'200px',
-    height:'100px',
-    fontSize:'11px',
-    fontStyle: 'normal',
+  entrarButton2: {
+    marginTop:'15px',
+    width:'65%',
+    color:'#1da1f2',
+    height:'40px',
     fontFamily:'Segoe UI',
-
+    borderRadius:'60px',
+    textTransform: 'none',
   },
   container: {
     marginTop:'30px',
