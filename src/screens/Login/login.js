@@ -3,20 +3,11 @@ import Grid from '@material-ui/core/Grid';
 import Footer from '../../components/Footer/footer'
 import Input from '../../components/Input/input'
 import Button from '@material-ui/core/Button';
-import {withStyles, makeStyles} from '@material-ui/core/styles';
+import CustomButton from '../../components/Button/Custom/buttonCustom'
+import {makeStyles} from '@material-ui/core/styles';
 
 import imgLogin from '../../Images/login.png'
 import imgBoasVindas from '../../Images/twitter-frase.PNG'
-
-const CustomButton = withStyles(theme => ({
-  root: {
-    color: theme.palette.getContrastText('#1da1f2'),
-    backgroundColor:'#1da1f2',
-    '&:hover': {
-      backgroundColor: '#1da1f2',
-    },
-  },
-}))(Button);
 
 
 export default function LoginScreen() {
