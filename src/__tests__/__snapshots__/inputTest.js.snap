@@ -1,5 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input /> spec find component by label 1`] = `undefined`;
-
-exports[`<Input /> spec renders the component 1`] = `undefined`;
+exports[`<Input /> spec Renders the component 1`] = `undefined`;
