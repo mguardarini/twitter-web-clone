@@ -17,7 +17,7 @@ export default function LoginScreen() {
         <Grid container>
           <Hidden only={['xs','sm','md']}>
             <Grid item sm={6} xs={12}>
-              <img width='97%' src={imgLogin}></img>
+              <img alt='dashboard' width='97%' src={imgLogin}></img>
             </Grid>
           </Hidden>  
           <Grid item sm={5} xs={11}>
@@ -29,10 +29,10 @@ export default function LoginScreen() {
                   </Button>
               </Grid> 
               <Grid className={classes.forgetPasswordGrid}>
-                  <Link className={classes.forgetPasswordText} text="Esqueceu sua senha?"></Link>
+                  <Link className={classes.forgetPasswordText} to='/' text="Esqueceu sua senha?"></Link>
               </Grid> 
                 <Grid className={classes.imageGrid}>
-                    <img width='80%' src={imgBoasVindas}></img>
+                    <img alt='login' width='80%' src={imgBoasVindas}></img>
                     <CustomButton variant="outlined" text='Inscreva-se' className={classes.inscrevaButton}/>
                     <Button variant="outlined" color="primary" className={classes.entrarButton2}>
                         Entrar
