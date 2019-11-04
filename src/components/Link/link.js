@@ -6,14 +6,13 @@ export default function CustomLink(props) {
     const classes = useStyles();
     return (
         <Link
+            to={props.to}
             className={[classes.link,props.className]}
             component="button"
             variant="body2"
-            onClick={() => {
-                alert("I'm footer.");
-            }}
+            onClick={props.onClick}
             >
-              {props.text}
+            {props.text}
         </Link>
     )
 }   
