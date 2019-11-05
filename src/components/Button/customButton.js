@@ -8,7 +8,7 @@ const BtnCustom = withStyles(theme => ({
     root: {
       backgroundColor:'#1da1f2',
       '&:hover': {
-        backgroundColor: '#1E5DFF',
+        backgroundColor: '#3098CA',
       }
     },
   }))(Button);

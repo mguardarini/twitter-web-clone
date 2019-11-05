@@ -31,6 +31,7 @@ export default function LoginScreen() {
               <Grid className={classes.forgetPasswordGrid}>
                   <Link className={classes.forgetPasswordText} to='/' text="Esqueceu sua senha?"></Link>
               </Grid> 
+              <Hidden only={['xs','sm','md']}>
                 <Grid className={classes.imageGrid}>
                     <img alt='login' width='80%' src={imgBoasVindas}></img>
                     <CustomButton variant="outlined" text='Inscreva-se' className={classes.inscrevaButton}/>
@@ -38,6 +39,7 @@ export default function LoginScreen() {
                         Entrar
                     </Button>
                 </Grid>
+              </Hidden>
           </Grid>       
         </Grid>
         <Footer/>
