@@ -3,9 +3,11 @@ import { makeStyles} from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     textfield: {
       margin: theme.spacing(1),
-      width:'200px',
+      marginBottom:'0px',
       fontStyle: 'normal',
       fontFamily:'Segoe UI',
+      borderColor:'#ffffff'
+
     }
 }));
   

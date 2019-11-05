@@ -6,10 +6,9 @@ export default function CustomButton(props){
     
 const BtnCustom = withStyles(theme => ({
     root: {
-      // color: theme.palette.getContrastText('#1da1f2'),
       backgroundColor:'#1da1f2',
       '&:hover': {
-        backgroundColor: '#1da1f2',
+        backgroundColor: '#3098CA',
       }
     },
   }))(Button);
