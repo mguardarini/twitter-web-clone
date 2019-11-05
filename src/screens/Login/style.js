@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   imageGrid: {
     alignContent: 'center',
     marginLeft:'29%',
-    marginTop:'20px',
+    marginTop:'60px',
     marginRight:'24%',
     align: 'center',
     width:'70%',
@@ -20,16 +20,18 @@ const useStyles = makeStyles(theme => ({
     marginTop:'3%',
   },
   entrarButtoon: {
-    marginTop:'11px',
-    width:'80px',
+    marginTop:'9px',
+    width:'75px',
     height:'50px',
     color:'#1da1f2',
     fontFamily:'Segoe UI',
     borderRadius:'60px',
     textTransform: 'none',
+    borderColor:'#1da1f2'
   },
   forgetPasswordGrid:{
-    marginLeft:'50%',
+    marginTop:'0px',
+    marginLeft:'53%',
   },
   forgetPasswordText:{
     paddingTop:'0px',

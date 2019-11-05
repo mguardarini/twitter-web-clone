@@ -8,24 +8,24 @@ export default function Footer() {
     const classes = useStyles(); 
     return (
         <Grid item className={classes.footer} fixed="true" sm={12}>
-            <Link className={classes.link} text="Sobre"/>
-            <Link className={classes.link} text="Central de Ajuda"/>
-            <Link className={classes.link} text="Blog"/>
-            <Link className={classes.link} text="Status"/>
-            <Link className={classes.link} text="Empregos"/>
-            <Link className={classes.link} text="Termos"/>
-            <Link className={classes.link} text="Politica de Privacidade"/>
-            <Link className={classes.link} text="Cookies"/>
-            <Link className={classes.link} text="Informações de anúncios"/>
-            <Link className={classes.link} text="Marca"/>
-            <Link className={classes.link} text="Aplicativos"/>
-            <Link className={classes.link} text="Anunciantes"/>
-            <Link className={classes.link} text="Marketing"/>
-            <Link className={classes.link} text="Empresas"/>
-            <Link className={classes.link} text="Programadores"/>
-            <Link className={classes.link} text="Diretório"/>
-            <Link className={classes.link} text="Configurações"/>
-            <Link className={classes.link} text="© 2019 Twitter"/>
+            <Link text="Sobre"/>
+            <Link text="Central de Ajuda"/>
+            <Link text="Blog"/>
+            <Link text="Status"/>
+            <Link text="Empregos"/>
+            <Link text="Termos"/>
+            <Link text="Politica de Privacidade"/>
+            <Link text="Cookies"/>
+            <Link text="Informações de anúncios"/>
+            <Link text="Marca"/>
+            <Link text="Aplicativos"/>
+            <Link text="Anunciantes"/>
+            <Link text="Marketing"/>
+            <Link text="Empresas"/>
+            <Link text="Programadores"/>
+            <Link text="Diretório"/>
+            <Link text="Configurações"/>
+            <Link text="© 2019 Twitter"/>
         </Grid>
     )
 }
