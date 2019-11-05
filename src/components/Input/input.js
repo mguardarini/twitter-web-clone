@@ -5,7 +5,7 @@ import useStyles from './style';
 
 export default function InputComponent(props) {
     const classes = useStyles();
-    const height=28;
+    const height=27;
     const width=196;
     return (
         <TextField
@@ -19,9 +19,7 @@ export default function InputComponent(props) {
                   width,
                   padding: '10px',
                   fontSize: "11px"
-
-                },
-                
+                }          
             }}
             InputLabelProps={{
                 style: {

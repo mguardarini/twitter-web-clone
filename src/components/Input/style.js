@@ -6,6 +6,8 @@ const useStyles = makeStyles(theme => ({
       marginBottom:'0px',
       fontStyle: 'normal',
       fontFamily:'Segoe UI',
+      borderColor:'#ffffff'
+
     }
 }));
   
