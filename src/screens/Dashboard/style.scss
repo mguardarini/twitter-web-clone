@@ -2,9 +2,6 @@
 
 $timing        : 265ms;
 $defaultColor     : #1DA1F2;
-$accent        : #1DA1F2;
-$grape         : #1DA1F2;
-$orchid        : #1DA1F2;
 
 @mixin transformScale($size: 1) {
     transform: scale($size);
@@ -53,7 +50,7 @@ body {
             height: 300px;
             border-radius: 100%;
             display: block;
-            background: linear-gradient(45deg, $defaultColor, $accent);
+            background: linear-gradient(45deg, $defaultColor, $defaultColor);
             transition: all $timing ease-out;
         }
         
@@ -65,7 +62,7 @@ body {
         &:hover i {
             @include transformScale(2.2);
             color: $defaultColor;
-            background: -webkit-linear-gradient(45deg, $defaultColor, $accent);
+            background: -webkit-linear-gradient(45deg, $defaultColor, $defaultColor);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all $timing ease-in;
@@ -75,7 +72,7 @@ body {
     a.social-square {
       
         &:before {
-            background: linear-gradient(45deg, $grape, $orchid);
+            background: linear-gradient(45deg, $defaultColor, $defaultColor);
             border-radius: 10%;
         }
       
