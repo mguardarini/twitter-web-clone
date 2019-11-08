@@ -1,27 +1,19 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Footer from '../Footer/footer'
 import Input from '../../components/Input/input'
 import Button from '@material-ui/core/Button';
-import imgLogin from '../../images/login.png'
-import imgBoasVindas from '../../images/twitter-frase.PNG'
+import imgLogin from '../../assets/images/login.png'
+import imgBoasVindas from '../../assets/images/twitter-frase.PNG'
 import CustomButton from '../../components/Button/customButton';
 import Hidden from '@material-ui/core/Hidden';
 import CustomLink from '../../components/Link/link';
 import useStyles from './style';
-import {Redirect} from 'react-router-dom';
 
+export default function LoginScreen () {
 
-const classes = useStyles(); 
-  
-
-class LoginScreen extends Component() {
-
-    onSubmit ()  {
-      return  <Redirect  to="/dashboard" />
-    }
-
-    render(){
+      const classes = useStyles(); 
+      
         return (
           <div className={classes.rootGrid}>
             <Grid container>
@@ -34,7 +26,7 @@ class LoginScreen extends Component() {
                  <Grid className={classes.inputGrid}>
                       <Input placeholder="Celular, e-mail ou numero"/>
                       <Input placeholder='Senha'/>                 
-                      <Button onClick={this.onSubmit} variant="outlined" text="Entrar" color="primary" className={classes.entrarButtoon}>
+                      <Button  variant="outlined" text="Entrar" color="primary" className={classes.entrarButtoon}>
                           Entrar
                       </Button>
                   </Grid> 
@@ -55,8 +47,4 @@ class LoginScreen extends Component() {
             <Footer/>
           </div>
         );
-      }
 }
-
-export default (LoginScreen);
-  
