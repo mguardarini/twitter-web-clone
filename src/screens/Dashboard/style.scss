@@ -14,8 +14,8 @@ body {
 }
 
 .social-container {
-    width: 300px;
-
+    width: 400px;
+    margin: 40vh auto;
     text-align: center;
 }
 
@@ -63,7 +63,7 @@ body {
             @include transformScale(2.2);
             color: $defaultColor;
             background: -webkit-linear-gradient(45deg, $defaultColor, $defaultColor);
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all $timing ease-in;
         }
