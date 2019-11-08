@@ -9,10 +9,22 @@ import CustomButton from '../../components/Button/customButton';
 import Hidden from '@material-ui/core/Hidden';
 import CustomLink from '../../components/Link/link';
 import useStyles from './style';
+import { useHistory } from "react-router-dom";
+import { useState } from 'react';
 
 export default function LoginScreen () {
 
+      let history = useHistory();
       const classes = useStyles(); 
+      const [login, setLogin] = useState(''); // '' is the initial state value
+      const [password, setPassword] = useState(''); // '' is the initial state value
+
+
+      function handleClick(evt) {
+        evt.preventDefault();
+        console.log(login)
+        history.push("/dashboard");
+      }
       
         return (
           <div className={classes.rootGrid}>
@@ -24,9 +36,9 @@ export default function LoginScreen () {
               </Hidden>  
               <Grid item sm={5} xs={11}>
                  <Grid className={classes.inputGrid}>
-                      <Input placeholder="Celular, e-mail ou numero"/>
-                      <Input placeholder='Senha'/>                 
-                      <Button  variant="outlined" text="Entrar" color="primary" className={classes.entrarButtoon}>
+                      <Input value={login} onInput={e=>setLogin(e.target.value)} placeholder="Celular, e-mail ou numero"/>
+                      <Input value={password} onInput={e=>setPassword(e.target.value)} placeholder='Senha'/>                 
+                      <Button submit onClick={handleClick} variant="outlined" text="Entrar" color="primary" className={classes.entrarButtoon}>
                           Entrar
                       </Button>
                   </Grid> 
