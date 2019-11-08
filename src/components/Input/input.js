@@ -13,6 +13,8 @@ export default function InputComponent(props) {
             className={clsx(classes.textfield)}
             label={props.placeholder}
             variant="outlined"
+            value={props.value}
+            onInput={props.onInput}
             inputProps={{
                 style: {
                   height,
