@@ -33,6 +33,10 @@ const useStyles = makeStyles(theme => ({
     fontSize:'14px',
     fontFamily:'Segoe UI',
     marginLeft:'36.5%',
+    paddingLeft:'4px',
+    paddingRight:'12px',
+    color:'#aab8c2',
+    textAlign:'center'
   },
   PrimaryStaticLoggedOutHomePageButtonSignup: {
     color:'#ffffff',

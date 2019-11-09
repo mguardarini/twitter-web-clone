@@ -8,24 +8,24 @@ export default function Footer() {
     const classes = useStyles(); 
     return (
         <Grid item className={classes.Footer} sm={12}>
-            <Link text="Sobre"/>
-            <Link text="Central de Ajuda"/>
-            <Link text="Blog"/>
-            <Link text="Status"/>
-            <Link text="Empregos"/>
-            <Link text="Termos"/>
-            <Link text="Politica de Privacidade"/>
-            <Link text="Cookies"/>
-            <Link text="Informações de anúncios"/>
-            <Link text="Marca"/>
-            <Link text="Aplicativos"/>
-            <Link text="Anunciantes"/>
-            <Link text="Marketing"/>
-            <Link text="Empresas"/>
-            <Link text="Programadores"/>
-            <Link text="Diretório"/>
-            <Link text="Configurações"/>
-            <Link text="© 2019 Twitter"/>
+            <Link className={classes.Link} text="Sobre"/>
+            <Link className={classes.Link} text="Central de Ajuda"/>
+            <Link className={classes.Link} text="Blog"/>
+            <Link className={classes.Link} text="Status"/>
+            <Link className={classes.Link} text="Empregos"/>
+            <Link className={classes.Link} text="Termos"/>
+            <Link className={classes.Link} text="Politica de Privacidade"/>
+            <Link className={classes.Link} text="Cookies"/>
+            <Link className={classes.Link} text="Informações de anúncios"/>
+            <Link className={classes.Link} text="Marca"/>
+            <Link className={classes.Link} text="Aplicativos"/>
+            <Link className={classes.Link} text="Anunciantes"/>
+            <Link className={classes.Link} text="Marketing"/>
+            <Link className={classes.Link} text="Empresas"/>
+            <Link className={classes.Link} text="Programadores"/>
+            <Link className={classes.Link} text="Diretório"/>
+            <Link className={classes.Link} text="Configurações"/>
+            <Link className={classes.Link} text="© 2019 Twitter"/>
         </Grid>
     )
 }

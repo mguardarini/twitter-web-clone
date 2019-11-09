@@ -1,14 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Link /> spec Renders the component Link 1`] = `undefined`;
-
-exports[`<Link /> spec Should click in Link component 1`] = `
-<button
-  className="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-link-38 MuiLink-button MuiTypography-body2 MuiTypography-colorPrimary"
-  onBlur={[Function]}
-  onClick={[Function]}
-  onFocus={[Function]}
->
-  Test
-</button>
-`;
