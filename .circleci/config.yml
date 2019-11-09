@@ -33,7 +33,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run server tests
+      # run components tests
       - run: yarn test
-      # run web codegen to check graphql queries
-      - run: yarn start
+      # # run web codegen to check graphql queries
+      # - run: yarn start
