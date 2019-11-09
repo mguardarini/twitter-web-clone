@@ -1,6 +1,8 @@
 # I tried to clone twitter web page
 
-So, first of all i tried to clone twitter web site, but when i developed the login interface, i find something isn't cool or really beautiful, like button of "Log in" aside textfield, so a i changed this button for someone more cool 🎉. Therefore this is my version of twitter web page.
+So, first of all, i was studing this library material-ui and decide tried to clone twitter web site, but when i developed the login interface. I thinked  find "Log in" button isnt cool or really beautiful, so i changed this button for something more cool 🎉. Therefore this is my version of twitter web page.
+
+I really need developed more components in this interface, because i using a print of images to create the dashboard image and now understood who this is image is create with css.
 
 ![Twitter Login](screenshot/twitter-login.PNG)
 
@@ -27,7 +29,7 @@ So, when you finished install all this modules, running the command:
 
 `yarn start or npm start`
 
-
+License MIT
 
 
 
