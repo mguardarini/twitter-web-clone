@@ -1,11 +1,14 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
-    footer:{
-        marginLeft:'55px',
-        marginRight:'50px',
+    Footer:{
+
         textAlign:'center',
-        marginBottom:'-12px'
+        position: 'fixed',
+        left: 0,
+        bottom: 15,
+        width: '100%',
+        textAlign: 'center'
     }
 }));
 

@@ -2,25 +2,24 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
-  rootGrid: {
+  RootGrid: {
     flexGrow: 1,
     color: '#ffffff',
   },
-  imageGrid: {
+  SecondaryFormPageSignup: {
     alignContent: 'center',
     marginLeft:'29%',
-    marginTop:'10%',
+    marginTop:'7%',
     marginRight:'24%',
     align: 'center',
-    width:'70%',
-    height:'70%'
+    width:'60%'
   },
-  inputGrid: {
+  FormGrid: {
     marginLeft:'15%',
     marginTop:'3%',
   },
-  entrarButtoon: {
-    marginTop:'1.5%',
+  SignupButton: {
+    marginTop:'1.3%',
     width:'14%',
     height:'50px',
     color:'#1da1f2',
@@ -30,16 +29,12 @@ const useStyles = makeStyles(theme => ({
     borderColor:'#1da1f2',
     
   },
-  forgetPasswordGrid:{
-    marginTop:'0px',
-    marginLeft:'53%',
-  },
-  forgetPasswordText:{
+  ForgetPassword:{
     fontSize:'14px',
     fontFamily:'Segoe UI',
-
+    marginLeft:'36.5%',
   },
-  inscrevaButton: {
+  PrimaryStaticLoggedOutHomePageButtonSignup: {
     color:'#ffffff',
     marginTop:'20px',
     width:'80%',
@@ -48,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     borderRadius:'60px',
     textTransform: 'none',
   },
-  entrarButton2: {
+  SecondaryStaticLoggedOutHomePageButtonSignup: {
     marginTop:'15px',
     width:'80%',
     color:'#1da1f2',
@@ -56,6 +51,9 @@ const useStyles = makeStyles(theme => ({
     fontFamily:'Segoe UI',
     borderRadius:'60px',
     textTransform: 'none',
+  },
+  StaticLoggedOutHomePageSignupTitle:{
+
   }
 }));
 

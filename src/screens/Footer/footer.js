@@ -7,7 +7,7 @@ import useStyles from './style';
 export default function Footer() {
     const classes = useStyles(); 
     return (
-        <Grid item className={classes.footer} fixed="true" sm={12}>
+        <Grid item className={classes.Footer} sm={12}>
             <Link text="Sobre"/>
             <Link text="Central de Ajuda"/>
             <Link text="Blog"/>

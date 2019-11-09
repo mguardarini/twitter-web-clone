@@ -1,62 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Footer from '../Footer/footer'
 import Input from '../../components/Input/input'
-import Button from '@material-ui/core/Button';
-import imgLogin from '../../assets/images/login.png'
-import imgBoasVindas from '../../assets/images/twitter-frase.PNG'
+import DefaultButton from '../../components/Button/defaultButton';
+import StaticLoggedOutHomePagePrimary from '../../assets/images/login.png'
+import StaticLoggedOutHomePageSecondary from '../../assets/images/twitter-frase.PNG'
 import CustomButton from '../../components/Button/customButton';
-import Hidden from '@material-ui/core/Hidden';
 import CustomLink from '../../components/Link/link';
 import useStyles from './style';
 import { useHistory } from "react-router-dom";
-import { useState } from 'react';
 
 export default function LoginScreen () {
 
-      let history = useHistory();
-      const classes = useStyles(); 
-      const [login, setLogin] = useState(''); // '' is the initial state value
-      const [password, setPassword] = useState(''); // '' is the initial state value
+        let history = useHistory();
+        const classes = useStyles(); 
+        const [login, setLogin] = useState(''); 
+        const [password, setPassword] = useState('');
 
-
-      function handleClick(evt) {
-        evt.preventDefault();
-        console.log(login)
-        history.push("/dashboard");
-      }
+        function handleClick(evt) {
+          evt.preventDefault();
+          history.push("/dashboard");
+        }
       
         return (
-          <div className={classes.rootGrid}>
+          <div className={classes.RootGrid}>
             <Grid container>
-              <Hidden only={['xs','sm','md']}>
-                <Grid item sm={6} xs={12}>
-                  <img alt='dashboard' width='99%' src={imgLogin}></img>
-                </Grid>
-              </Hidden>  
-              <Grid item sm={5} xs={11}>
-                 <Grid className={classes.inputGrid}>
-                      <Input value={login} onInput={e=>setLogin(e.target.value)} placeholder="Celular, e-mail ou numero"/>
-                      <Input value={password} onInput={e=>setPassword(e.target.value)} placeholder='Senha'/>                 
-                      <Button submit onClick={handleClick} variant="outlined" text="Entrar" color="primary" className={classes.entrarButtoon}>
-                          Entrar
-                      </Button>
-                  </Grid> 
-                  <Grid className={classes.forgetPasswordGrid}>
-                      <CustomLink className={classes.forgetPasswordText} to='/' text="Esqueceu sua senha?"></CustomLink>
-                  </Grid> 
-                  <Hidden only={['xs','sm','md']}>
-                    <Grid className={classes.imageGrid}>
-                        <img alt='login' width='80%' src={imgBoasVindas}></img>
-                        <CustomButton variant="outlined" text='Inscreva-se' className={classes.inscrevaButton}/>
-                        <Button variant="outlined" color="primary" className={classes.entrarButton2}>
-                            Entrar
-                        </Button>
-                    </Grid>
-                  </Hidden>
-              </Grid>       
+                  <Grid item xs={6}>
+                    <img alt='dashboard' width='103%' src={StaticLoggedOutHomePagePrimary}></img>
+                  </Grid>             
+                  <Grid item xs={6}>
+                     <Grid className={classes.FormGrid}>
+                        <Input value={login} onInput={e=>setLogin(e.target.value)} placeholder="Celular, e-mail ou numero"/>
+                        <Input value={password} onInput={e=>setPassword(e.target.value)} placeholder='Senha'/>                 
+                        <DefaultButton  onClick={handleClick} variant="outlined" text="Entrar" color="primary" className={classes.SignupButton}/>                     
+                        <CustomLink className={classes.ForgetPassword} text="Esqueceu sua senha?"></CustomLink>
+                     </Grid> 
+                     <Grid className={classes.SecondaryFormPageSignup}>
+                        <img alt='login' width='80%' src={StaticLoggedOutHomePageSecondary}></img>
+                        <CustomButton variant="outlined" text='Inscreva-se' className={classes.PrimaryStaticLoggedOutHomePageButtonSignup}/>
+                        <DefaultButton text="Entrar" onClick={handleClick} variant="outlined" color="primary" className={classes.SecondaryStaticLoggedOutHomePageButtonSignup}/>              
+                     </Grid>
+                  </Grid>       
+                <Footer/>
             </Grid>
-            <Footer/>
           </div>
         );
 }
